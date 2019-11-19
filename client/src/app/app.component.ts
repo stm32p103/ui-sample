@@ -1,17 +1,10 @@
-import { Component, Renderer, NgZone } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html'
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-    sidebarActive: boolean;
-
-    onMenuButtonClick(event: Event) {
-        this.sidebarActive = !this.sidebarActive;
-
-        event.preventDefault();
-    }
+  title = 'client';
 }
